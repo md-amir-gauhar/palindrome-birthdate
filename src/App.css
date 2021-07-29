@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
+  font-family: 'Parisienne', cursive;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.main_container {
+  background-color: #f98b88;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Parisienne', cursive;
+  font-size: 1.7rem;
+}
+
+.side_container {
+  background-image: url('https://rukminim1.flixcart.com/image/612/612/khuvxjk0-0/calendar/i/j/g/2021-motivational-table-calendar-a5-size-8-5-x-5-5-inch-12-pages-original-imafxrxwxzxedqpm.jpeg?q=70');
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffe5b4;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.input_container {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 10px;
+  color: crimson;
 }
 
-.App-link {
-  color: #61dafb;
+.input_container > span {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 0.2vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_container > input {
+  width: 300px;
+  height: 40px;
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+}
+
+.input_container .note {
+  height: 120px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  color: whitesmoke;
+  border: 5px solid white;
+  border-radius: 50% 20% / 10% 40%;;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  width: 120px;
+  height: 48px;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  border-radius: 2rem;
+  border: 0.1vw solid black;
+  cursor: pointer;
 }
